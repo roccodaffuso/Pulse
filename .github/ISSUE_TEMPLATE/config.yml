@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Pulse Privacy Policy
+    url: https://github.com/roccodaffuso/Pulse/blob/main/docs/PRIVACY_POLICY.md
+    about: Read how Pulse handles health data and privacy.
+  - name: Pulse Vitals on the App Store
+    url: https://apps.apple.com/app/id6772466715
+    about: View or download the current App Store release.

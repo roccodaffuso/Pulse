@@ -1,0 +1,56 @@
+name: Bug report
+description: Report a reproducible problem with Pulse Vitals
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Pulse. Issues are public. Do not include health values, personal identifiers, or sensitive screenshots.
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Affected surface
+      options:
+        - iPhone app
+        - Apple Watch app
+        - Widget
+        - Apple Watch complication
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: Pulse version and build
+      description: Find this in Pulse Settings.
+      placeholder: "1.2.1 (36)"
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: OS and device
+      placeholder: "iOS 26.4, iPhone 17"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Describe the shortest reliable sequence.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
